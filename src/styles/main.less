@@ -1,9 +1,22 @@
-@import "variaveis.less";
+@import "./config/escapings.less";
+@import "./config/maps.less";
+@import "./config/reset.less";
+@import "./section/header.less";
+@import "./section/products.less";
 
 body{
-    background: @CorDeFundo;
-
-    p{
-        color: @CorLetra;
+    background: #cores[CorDeFundoBody] ;
+    
+    li {
+        list-style: none;
+    }
+    .container {
+        max-width: 1024px;
+        width: 100%;
+        margin: 0 auto;
+    
+        @media @BreakPointTablet {
+            max-width: 80%;
+        }
     }
 }
